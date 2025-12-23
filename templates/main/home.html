@@ -1,0 +1,15 @@
+{% extends 'main/base.html' %}
+{% block title %}
+Результат
+{% endblock %}.
+
+
+{% block content %}
+{% load static %}
+
+
+<img src="{% static 'templates/0.jpg'%}" width="300px">
+<h2>Это похоже на {{image_01}} с вероятностью {{percent}}%.</h2>
+
+
+{% endblock %}
